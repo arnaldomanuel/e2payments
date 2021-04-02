@@ -1,0 +1,34 @@
+{
+    "name": "explicador/payments",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arnaldo Manuel",
+            "email": "70331507+arnaldomanuel@users.noreply.github.com"
+        }
+    ],
+    "description": "Pacote de pagamento",
+    "require": {  
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "require-dev": {
+      
+    },
+  
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Explicador\\Payments\\ExpPayment"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Explicador\\Payments\\": "src/"
+        }
+    },
+    "scripts": {
+        "cs": "php-cs-fixer fix"
+    }
+}
